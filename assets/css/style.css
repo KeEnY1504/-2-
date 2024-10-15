@@ -15,7 +15,7 @@ body {
 
 .header {
   margin: 0 auto;
-  width: 100%;
+  width: 1400px;
   height: 839px;
   background: url("../img/UVIYOrIo8oGeh207JgXMFWGbR_keEUTZKWzT23EJjDHOw0yP9bLxPgB4ws8kDk1sC7TEQfLgnKSxgq6tFlmfm_Q2fV53DEdl7oc8f5ahDbWgmhM4yiDl_KmvsGy2Drr2GKSOmFIjIR_0GdF5xRm8qn_B0kbAgarAgqXOiDa7acwichsJAgvxln817L03RtwVwJoT61zBcosd3mKNBwzpdPgHv5ihYTG4l8mi-vMrbbj-8WMEIPBYEMNn7.webp");
   background-repeat: no-repeat;
@@ -156,7 +156,7 @@ body {
   background: url("../img/Arrow left(2).svg") no-repeat;
 }
 .slider img {
-  width: 1400px;
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -167,9 +167,9 @@ body {
     width: 100%;
     margin-top: 90px;
     position: relative; /* Позволяет дочерним элементам позиционироваться относительно него */
-    height: 250px; /* Высота header */
+    height: 220px; /* Высота header */
     background: url("../img/UVIYOrIo8oGeh207JgXMFWGbR_keEUTZKWzT23EJjDHOw0yP9bLxPgB4ws8kDk1sC7TEQfLgnKSxgq6tFlmfm_Q2fV53DEdl7oc8f5ahDbWgmhM4yiDl_KmvsGy2Drr2GKSOmFIjIR_0GdF5xRm8qn_B0kbAgarAgqXOiDa7acwichsJAgvxln817L03RtwVwJoT61zBcosd3mKNBwzpdPgHv5ihYTG4l8mi-vMrbbj-8WMEIPBYEMNn7.webp");
-    background-size: contain; /* или другое значение */
+    background-size: cover; /* или другое значение */
     background-position: top; /* измените позицию, если нужно */
     background-repeat: no-repeat; /* или другое значение */
   }
@@ -235,7 +235,7 @@ body {
   }
   .slider__container img {
     width: 100%;
-    height: auto;
+    height: 230px;
     -o-object-fit: cover;
        object-fit: cover;
   }
