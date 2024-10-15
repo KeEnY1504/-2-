@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Comfortaa;
+    color: black;
+    text-decoration: none;
+}
+body{
+    margin: 0 auto;
+    width: 100%;
+    background-color: #F0F0F2;
+}
+
+.header{
+    margin: 0 auto;
+    width: 100%;
+    height: 839px;
+    background: url('../img/UVIYOrIo8oGeh207JgXMFWGbR_keEUTZKWzT23EJjDHOw0yP9bLxPgB4ws8kDk1sC7TEQfLgnKSxgq6tFlmfm_Q2fV53DEdl7oc8f5ahDbWgmhM4yiDl_KmvsGy2Drr2GKSOmFIjIR_0GdF5xRm8qn_B0kbAgarAgqXOiDa7acwichsJAgvxln817L03RtwVwJoT61zBcosd3mKNBwzpdPgHv5ihYTG4l8mi-vMrbbj-8WMEIPBYEMNn7.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__container{
+        margin: 0 auto;
+        width: 1400px;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f8f7f829;
+        &-logo{
+            display: flex;
+            align-items: center;
+            margin-left: 60px;
+            height: 60px;
+            width: 190px;
+            & p{
+                margin-left: 10px;
+                font-size: 25px;
+                font-weight: 900;
+                color: white;
+            }
+        }
+        &-navbar{
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            & .hamburger-menu{
+                height: 40px;
+                display: none;
+                & .hamburger__modal{
+                    display: none;
+                    position: fixed;
+                    z-index: 1;
+                    left: 0;
+                    top: 0;
+                    width: 100vw; /* полная ширина */
+                    height: 100vh; /* полная высота */
+                    background-color: rgba(0,0,0,0.4); /* цвет фона - прозрачный черный */
+                    &-content{
+                        background-color: #fff;
+                        /* окно будет находится по центру по горизонтали и с отступом сверху в 100 px */
+                        margin: 0 auto; 
+                        padding: 20px;
+                        width: 50%; 
+                        font-size: 20px;
+                        /* разнесем текст и кнопоку по краям окна */
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+            & .hamburger{
+                width: 30px;
+                height: 3px;
+                margin: 5px;
+            }
+            & ul{
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                & li a{
+                    color: white;
+                    text-decoration: none;
+                    padding: 1rem;
+                    font-family: Comfortaa;
+                }
+            }
+        }
+    }
+    &__intro{
+        width: 348px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        font-size: Comfortaa ;
+        float: right;
+        margin: 0 auto;
+        margin-top: 240px;
+        padding: 100px;
+        & .intro{
+            color: white;
+            font-size: 64px;
+        }
+        &  .pov-intro{
+            color: #ffffff;
+            font-size: 36px;
+        }
+    }
+}
+.slider__container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 1400px;
+    height: 852px;
+    margin: 90px auto;
+        &__container{
+            position: relative;
+            width: 100%;
+            height: 852px;
+            margin: 0 auto;
+            overflow: hidden;
+            &-block{
+                width: 100%;
+                height: 100%;
+            }
+            .prev-button,.next-button {
+              position: absolute;
+              top: 45%;
+              width: 100px;
+              height: 100px;
+              background: url('../img/Arrow\ left\(1\).svg') no-repeat;
+              border: none;
+            }
+            .prev-button {
+                left: 10px;
+              }
+              
+              .next-button {
+                right: 10px;
+                background: url('../img/Arrow\ left\(2\).svg')no-repeat;
+              } 
+        }
+        & img{
+            width: 1400px;
+            height: 100%;
+            object-fit: cover;
+        }
+  }
+
+@media only screen and (max-width: 768px) {
+    .header{
+        width: 100%;
+        margin-top: 90px;
+        position: relative; /* Позволяет дочерним элементам позиционироваться относительно него */
+        height: 250px; /* Высота header */
+        background: url('../img/UVIYOrIo8oGeh207JgXMFWGbR_keEUTZKWzT23EJjDHOw0yP9bLxPgB4ws8kDk1sC7TEQfLgnKSxgq6tFlmfm_Q2fV53DEdl7oc8f5ahDbWgmhM4yiDl_KmvsGy2Drr2GKSOmFIjIR_0GdF5xRm8qn_B0kbAgarAgqXOiDa7acwichsJAgvxln817L03RtwVwJoT61zBcosd3mKNBwzpdPgHv5ihYTG4l8mi-vMrbbj-8WMEIPBYEMNn7.webp');
+        background-size: contain; /* или другое значение */
+        background-position: top; /* измените позицию, если нужно */
+        background-repeat: no-repeat; /* или другое значение */
+        &__container{
+            width: 100%;
+            position: absolute; /* Позволяет разместить контейнер поверх header */
+            top: -90px; /* Отступ сверху */
+            z-index: 1; /* Устанавливаем выше фона */
+            background-color: rgba(166, 166, 166, 0.399);
+            &-logo p{
+                color: black;
+            }
+        }
+        &__modal{
+            width: 100%;
+            height: 900;
+            &-content{
+            }
+        }
+        &__intro{
+            width:40%;
+            height: 80px;
+            margin: 0;
+            padding: 0;
+            margin-top:30%;
+            gap: 10px;
+            float: right;
+            & .intro{
+                font-size: 100%;
+                color: white;
+            }& .pov-intro{
+                font-size: 100%;
+            }& img{
+                width: 30%;
+                height: 30%;
+            }
+        }
+    }.slider{
+        width: 100%;
+        height: auto;
+        margin: 5% auto;
+        display: flex;
+        &__container{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+            & .prev-button,.next-button{
+                top: 40%;
+                width: 13%;
+                height: 20%;
+                background-size: 80%;
+                background-position: center;
+            }&.prev-button{
+                left: 0;
+            }&.next-button{
+                float: right;
+            }& img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+    
+    
+    
+    
+    .header__container-logo{
+        margin-left: 10px;
+    }
+    .header__container-navbar .hamburger-menu {
+        display: block;
+    }
+ 
+    .header__container-navbar .nav-links {
+        display: none;
+    }
+}
