@@ -115,23 +115,19 @@ body {
   font-size: 36px;
 }
 
-.slider__container {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 .slider {
   display: flex;
-  width: 1400px;
+  width: 100%;
   height: 852px;
-  margin: 90px auto;
+  margin: 0 auto 0 auto;
+  padding-bottom: 90px;
+  padding-top: 90px;
+  border-bottom: 10px solid #D9D2B0;
+  border-top: 10px solid #D9D2B0;
 }
 .slider__container {
   position: relative;
-  width: 100%;
+  width: 1400px;
   height: 852px;
   margin: 0 auto;
   overflow: hidden;
@@ -162,12 +158,95 @@ body {
      object-fit: cover;
 }
 
+.bloks {
+  width: 1400px;
+  height: 1422px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+  border-bottom: 10px solid #D9D2B0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bloks__block1 {
+  width: 1210px;
+  height: 476px;
+  background-color: #ffffff;
+  border: 5px solid #BF9424;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+.bloks__block1 p {
+  font-size: 40px;
+  color: #BF9424;
+}
+.bloks__block1-intro {
+  width: 1152px;
+  height: 325px;
+  margin-top: 40px;
+  border: 5px solid rgba(16, 17, 12, 0.6431372549);
+}
+.bloks__block1-intro p {
+  color: black;
+  font-size: 32px;
+  padding: 34px 9px;
+}
+.bloks__block1-intro span {
+  color: #BF9424;
+}
+.bloks__block2 {
+  width: 1354px;
+  height: 616px;
+  background-color: #ffffff;
+  border: 5px solid #BF9424;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bloks__block2 .intro {
+  font-size: 40px;
+  color: #BF9424;
+  margin-bottom: 52px;
+}
+.bloks__block2-boxs {
+  width: 1300px;
+  height: 420px;
+  display: flex;
+  gap: 20px;
+}
+.bloks__block2-boxs .box {
+  width: 420px;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 5px solid rgba(16, 17, 12, 0.2901960784);
+}
+.bloks__block2-boxs .box img {
+  margin-top: 32px;
+}
+.bloks__block2-boxs .box .box-num {
+  font-size: 19px;
+  margin-top: 10px;
+}
+.bloks__block2-boxs .box .box-intro {
+  width: 342px;
+  height: 198px;
+  font-size: 19px;
+}
+
 @media only screen and (max-width: 768px) {
   .header {
     width: 100%;
     margin-top: 90px;
     position: relative; /* Позволяет дочерним элементам позиционироваться относительно него */
-    height: 220px; /* Высота header */
+    height: 250px; /* Высота header */
     background: url("../img/UVIYOrIo8oGeh207JgXMFWGbR_keEUTZKWzT23EJjDHOw0yP9bLxPgB4ws8kDk1sC7TEQfLgnKSxgq6tFlmfm_Q2fV53DEdl7oc8f5ahDbWgmhM4yiDl_KmvsGy2Drr2GKSOmFIjIR_0GdF5xRm8qn_B0kbAgarAgqXOiDa7acwichsJAgvxln817L03RtwVwJoT61zBcosd3mKNBwzpdPgHv5ihYTG4l8mi-vMrbbj-8WMEIPBYEMNn7.webp");
     background-size: cover; /* или другое значение */
     background-position: top; /* измените позицию, если нужно */
@@ -212,6 +291,8 @@ body {
     height: auto;
     margin: 5% auto;
     display: flex;
+    padding-bottom: 10%;
+    padding-top: 10%;
   }
   .slider__container {
     width: 100%;
@@ -238,6 +319,55 @@ body {
     height: 230px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .bloks {
+    width: 100%;
+    height: 50%;
+  }
+  .bloks__block1 {
+    width: 80%;
+    height: 30%;
+  }
+  .bloks__block1 p {
+    margin-top: 10px;
+    font-size: 90%;
+  }
+  .bloks__block1-intro {
+    width: 80%;
+    height: 50%;
+    margin: 10px 0;
+  }
+  .bloks__block1-intro p {
+    padding: 10px;
+  }
+  .bloks__block2 {
+    width: 80%;
+    height: 1500px;
+    justify-content: start;
+  }
+  .bloks__block2 .intro {
+    width: 100%;
+    font-size: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .bloks__block2-boxs {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bloks__block2-boxs .box {
+    width: 98%;
+    height: 600px;
+  }
+  .bloks__block2-boxs .box .box-intro {
+    width: 90%;
+    font-size: 100%;
+  }
+  .bloks__block2-boxs .box img {
+    width: 100%;
   }
   .header__container-logo {
     margin-left: 10px;
