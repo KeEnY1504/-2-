@@ -329,16 +329,16 @@ body {
     height: 30%;
   }
   .bloks__block1 p {
-    margin-top: 10px;
+    margin: 20px 10px 20px 10px;
     font-size: 90%;
   }
   .bloks__block1-intro {
     width: 80%;
     height: 50%;
-    margin: 10px 0;
+    margin: 0 0 20px 0;
   }
   .bloks__block1-intro p {
-    padding: 10px;
+    padding: 0;
   }
   .bloks__block2 {
     width: 80%;
@@ -354,20 +354,25 @@ body {
   }
   .bloks__block2-boxs {
     width: 80%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
   .bloks__block2-boxs .box {
-    width: 98%;
-    height: 600px;
+    width: 100%;
+    height: 100%;
   }
   .bloks__block2-boxs .box .box-intro {
     width: 90%;
-    font-size: 100%;
+    font-size: 90%;
   }
   .bloks__block2-boxs .box img {
-    width: 100%;
+    margin-top: 10px;
+    width: 90%;
+  }
+  .bloks__block2-boxs .box .box-num {
+    margin: 0;
   }
   .header__container-logo {
     margin-left: 10px;
