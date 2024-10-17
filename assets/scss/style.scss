@@ -8,6 +8,7 @@
 body{
     margin: 0 auto;
     width: 100%;
+    height: auto;
     background-color: #F0F0F2;
 }
 
@@ -140,7 +141,7 @@ body{
               width: 100px;
               height: 100px;
               background: url('../img/Arrow\ left\(1\).svg') no-repeat;
-              border: none;
+              border: 1px solid black;
             }
             .prev-button {
                 left: 10px;
@@ -177,8 +178,11 @@ body{
         align-items: center;
         justify-content: center;
         margin-bottom: 48px;
+        & .intro{
+            font-size: 50px;
+        }
         & p{
-            font-size: 40px;
+            font-size: 50px;
             color: #BF9424;
         }
         &-intro{
@@ -206,7 +210,7 @@ body{
         align-items: center;
         justify-content: center; 
         & .intro{
-            font-size: 40px;
+            font-size: 50px;
             color: #BF9424;
             margin-bottom: 52px;
         }  
@@ -235,6 +239,75 @@ body{
                     font-size: 19px;
                 }
             }
+        }
+    }
+}
+.slid2{
+    width: 100%;
+    height: 1828px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 10px solid #bf932445;
+    &__intro{
+        font-size: 64px;
+        margin-bottom: 40px;
+    }
+    &__boxs{
+        width: 100%;
+        height: 1468px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        &-box{
+            width: 1312px;
+            height: 456px;
+            display: flex;
+            justify-content: space-between;
+            &__text-intro{
+                width: 100%;
+                height: 446px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                border: 5px solid #bf9324;
+                border-left: none;
+                & .intro{
+                    width: 90%;
+                    font-size: 32px;
+                    text-align: center;
+                }& .text{
+                    width: 90%;
+                    font-size: 21px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}.maps{
+    width: 100%;
+    height: 1093px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 10px solid #bf932445;
+    & p{
+        font-size: 64px;
+        color: #bf9324;
+        margin-bottom: 40px;
+    }
+    &__box{
+        width: 1200px;
+        height: 685px;
+        & iframe{
+            width: 100%;
+            height: 100%;
         }
     }
 }
@@ -270,7 +343,7 @@ body{
             height: 80px;
             margin: 0;
             padding: 0;
-            margin-top:30%;
+            margin-top:40%;
             gap: 10px;
             float: right;
             & .intro{
@@ -319,6 +392,9 @@ body{
         &__block1{
             width: 80%;
             height: 30%;
+            & .intro{
+                font-size: 180%;
+            }
             & p{
                 margin: 20px 10px 20px 10px;
                 font-size: 100%;
@@ -329,39 +405,98 @@ body{
                 margin: 0 0 20px 0;
                 & p{
                     padding: 0 ;
+                    text-align: center;
                 }
             }
         }&__block2{
             width: 80%;
-            height: 1300px;
+            height: 150%;
             justify-content: start;
             & .intro{
                 width: 100%;
-                font-size: 100%;
+                font-size: 200%;
                 display: flex;
                 justify-content: center;
+                text-align: center;
                 margin: 30px 0;
             }
             &-boxs{
                 width: 80%;
                 height: 80%;
                 display: flex;
+                align-items: center;
                 flex-direction:column;
+                margin-bottom: 40px;
                 gap: 20px;
                 & .box{
                     width: 100%;
                     height: 100%;
                     & .box-intro{
                         width: 90%;
+                        height: 100%;
                         font-size: 90%;
+                        margin-bottom: 20px;
                     }& img{
-                        margin-top: 10px;
+                        margin-top: 20px;
                         width: 90%;
                     }& .box-num{
                         margin: 0;
+                        margin-top: 20px;
                     }
                 }
             }
+        }
+    }
+    .slid2{
+        width: 100%;
+        height: 100%;
+        & p{
+            font-size: 200%;
+            margin: 20px 0;
+        }
+        &__boxs{
+            width: 80%;
+            height: 100%;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            &-box{
+                width: 103%;
+                height: 100%;
+                align-items: center;
+                flex-direction: column;
+                
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+                &__text-intro{
+                    width: 96.5%;
+                    height: 100%;
+                    justify-content:start;
+                    border-top: none;
+                    border-left: 5px solid #bf9324;
+                    & .intro{
+                        font-size: 130%;
+                        margin: 10px 0;
+                    }
+                    & .text{
+                        margin: 10px 0;
+                        font-size: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .maps{
+        width: 100%;
+        height: 100%;
+        & p{
+            margin-top: 40px;
+            font-size: 200%;
+        }
+        &__box{
+            width: 100%;
+            height: 500px;
         }
     }
     
