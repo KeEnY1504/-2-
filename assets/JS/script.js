@@ -1,13 +1,11 @@
-    const hamburgerMenu = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
-  
-    hamburgerMenu.addEventListener("click", () => {        
-navLinks.classList.toggle("show-menu");
+const hamburgerMenu = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburgerMenu.addEventListener("click", () => {
+  navLinks.classList.toggle("show-menu");
 });
 
 
-const modal = document.querySelector(".hamburger__modal")
-const  modalClose = document.querySelector(".hamburger__close")
 
 
 

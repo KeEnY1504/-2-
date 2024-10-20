@@ -317,6 +317,87 @@ body {
   height: 100%;
 }
 
+.footer {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.footer__container {
+  width: 1400px;
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__container-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__container-logo p {
+  font-size: 45px;
+  font-weight: 900;
+  color: white;
+}
+.footer__container-navbar {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__container-navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.footer__container-navbar ul a {
+  color: white;
+  padding: 1rem;
+  font-family: Comfortaa;
+  font-size: 25px;
+}
+.footer__container-social {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.footer__container-social ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.footer__container-social ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  font-family: Comfortaa;
+}
+.footer__text {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text p {
+  font-size: 25px;
+  color: white;
+}
+
 @media only screen and (max-width: 768px) {
   .header {
     width: 100%;
@@ -510,6 +591,25 @@ body {
   .maps__box {
     width: 100%;
     height: 500px;
+  }
+  .footer {
+    width: 100%;
+    height: 100%;
+  }
+  .footer__container-logo {
+    width: 100%;
+  }
+  .footer__container-navbar .nav-links {
+    flex-direction: column;
+  }
+  .footer__container-navbar .nav-links a {
+    font-size: 120%;
+  }
+  .footer__copyright {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
   .header__container-logo {
     margin-left: 10px;
