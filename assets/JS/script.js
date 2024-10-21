@@ -49,3 +49,15 @@ function updateSlider() {
 
 // Инициализация слайдера
 updateSlider();
+
+
+
+
+
+const boxContainer = document.querySelector(".box-container");
+
+boxContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("box")) {
+    e.target.classList.toggle("active");
+  }
+});
