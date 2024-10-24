@@ -56,7 +56,7 @@ body {
   height: 60px;
   width: 190px;
 }
-.header__container-logo p {
+.header__container-logo a {
   margin-left: 10px;
   font-size: 25px;
   font-weight: 900;
@@ -159,17 +159,16 @@ body {
 .slider__container .prev-button, .slider__container .next-button {
   position: absolute;
   top: 45%;
-  width: 100px;
-  height: 100px;
-  background: url("../img/Arrow left(1).svg") no-repeat;
-  border: 1px solid black;
+  width: 160px;
+  height: 140px;
+  border: 0;
 }
 .slider__container .prev-button {
-  left: 10px;
+  background: url("../img/arrow_back.svg") no-repeat center;
 }
 .slider__container .next-button {
-  right: 10px;
-  background: url("../img/Arrow left(2).svg") no-repeat;
+  right: 0;
+  background: url("../img/arrow_back(1).svg") no-repeat center;
 }
 .slider img {
   width: 100%;
@@ -630,6 +629,24 @@ body {
   cursor: pointer;
 }
 
+.yakor {
+  position: fixed;
+  left: 90%;
+  bottom: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: #1E1E1E;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 9000;
+}
+.yakor a img {
+  writing-mode: vertical-lr;
+}
+
 @media only screen and (max-width: 768px) {
   .header {
     width: 100%;
@@ -652,9 +669,38 @@ body {
   .header__container-logo p {
     color: black;
   }
-  .header__modal {
+  .header__container-navbar .hamburger-menu .open {
+    position: fixed;
+    left: 34.8%;
+    float: right;
+    width: 65%;
+    background-color: rgba(0, 0, 0, 0.7725490196);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .header__container-navbar .hamburger-menu .open .close {
+    position: relative;
     width: 100%;
-    height: 900;
+    height: 100%;
+    float: right;
+    margin-right: 2.5%;
+    margin-top: 20px;
+  }
+  .header__container-navbar .hamburger-menu .open ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    gap: 20px;
+  }
+  .header__container-navbar .hamburger-menu .open ul .button {
+    color: white;
+    text-align: center;
+  }
+  .header__container-navbar .hamburger-menu .open ul .button-contact {
+    text-align: center;
+    color: white;
   }
   .header__intro {
     position: relative;
@@ -669,15 +715,22 @@ body {
     float: right;
   }
   .header__intro .intro {
-    font-size: 140%;
+    font-size: 150%;
     color: white;
   }
   .header__intro .pov-intro {
-    font-size: 80%;
+    font-size: 85%;
+  }
+  .header__intro a {
+    width: 33px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .header__intro img {
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
   }
   .slider {
     width: 100%;
@@ -695,9 +748,9 @@ body {
     overflow: hidden;
   }
   .slider__container .prev-button, .slider__container .next-button {
-    top: 40%;
-    width: 13%;
-    height: 20%;
+    top: 35%;
+    width: 20%;
+    height: 30%;
     background-size: 80%;
     background-position: center;
   }
@@ -897,6 +950,55 @@ body {
   }
   .helping__boxs-2 .box img {
     margin: 0;
+  }
+  .modal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .modal__box {
+    width: 50%;
+    height: 40%;
+  }
+  .modal__box h1 {
+    font-size: 100%;
+  }
+  .modal__box .input-group {
+    width: 100%;
+  }
+  .modal__box .input-group p {
+    font-size: 100%;
+  }
+  .modal__box .input-group input {
+    width: 100%;
+  }
+  .modal__box .input-group button {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    font-size: 100%;
+  }
+  .yakor {
+    position: fixed;
+    left: 80%;
+    bottom: 5%;
+    width: 45px;
+    height: 45px;
+    background-color: #1E1E1E;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 9000;
+  }
+  .yakor a {
+    width: 60%;
+    height: 60%;
+  }
+  .yakor a img {
+    width: 100%;
+    height: 100%;
   }
   .header__container-logo {
     margin-left: 10px;

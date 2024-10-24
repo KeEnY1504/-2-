@@ -54,7 +54,7 @@ body{
             margin-left: 60px;
             height: 60px;
             width: 190px;
-            & p{
+            & a{
                 margin-left: 10px;
                 font-size: 25px;
                 font-weight: 900;
@@ -159,18 +159,19 @@ body{
             .prev-button,.next-button {
               position: absolute;
               top: 45%;
-              width: 100px;
-              height: 100px;
-              background: url('../img/Arrow\ left\(1\).svg') no-repeat;
-              border: 1px solid black;
+              width: 160px;
+              height: 140px;
+              border: 0;
+
+              
             }
             .prev-button {
-                left: 10px;
+                background: url('../img/arrow_back.svg') no-repeat center;
               }
               
               .next-button {
-                right: 10px;
-                background: url('../img/Arrow\ left\(2\).svg')no-repeat;
+                right: 0;
+                background: url('../img/arrow_back(1).svg')no-repeat center;
               } 
         }
         & img{
@@ -621,7 +622,23 @@ body{
         cursor: pointer;
     }
 }
-
+.yakor{
+    position: fixed;
+    left: 90%;
+    bottom: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: #1E1E1E;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 9000;
+    & a img{
+        writing-mode: vertical-lr;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .header{
@@ -643,11 +660,44 @@ body{
             &-logo p{
                 color: black;
             }
-        }
-        &__modal{
-            width: 100%;
-            height: 900;
-            &-content{
+            &-navbar{
+                & .hamburger-menu{
+                    & .open{
+                        position: fixed;
+                        left: 34.8%;
+                        float: right;
+                        width: 65%;
+                        background-color:#000000c5;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: end;
+                        
+                        & .close{
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            float: right;
+                            margin-right: 2.5%;
+                            margin-top: 20px;
+                        }
+                        & ul{
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            margin-right: 10px;
+                            gap: 20px;
+                            & .button{
+                                color: white;
+                                text-align: center;
+                            }
+                            & .button-contact{
+                                text-align: center;
+                                color: white;
+                            }
+                        }
+                    }
+                    
+                }
             }
         }
         &__intro{
@@ -662,13 +712,20 @@ body{
             gap: 10px;
             float: right;
             & .intro{
-                font-size: 140%;
+                font-size: 150%;
                 color: white;
             }& .pov-intro{
-                font-size: 80%;
+                font-size: 85%;
+            }
+            & a{
+                width: 33px;
+                height: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }& img{
-                width: 30%;
-                height: 30%;
+                width: 100%;
+                height: 100%;
             }
         }
     }.slider{
@@ -685,9 +742,9 @@ body{
             margin: 0;
             overflow: hidden;
             & .prev-button,.next-button{
-                top: 40%;
-                width: 13%;
-                height: 20%;
+                top: 35%;
+                width: 20%;
+                height: 30%;
                 background-size: 80%;
                 background-position: center;
             }&.prev-button{
@@ -880,9 +937,60 @@ body{
                     margin: 0;
                 }
             }
+            
         }
     }
-    
+
+    .modal{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        &__box{
+            width: 50%;
+            height: 40%;
+            & h1{
+                font-size: 100%;
+            }
+            & .input-group{
+                width: 100%;
+                & p{
+                    font-size: 100%;
+                }
+                & input{
+                    width: 100%;
+                }
+                & button{
+                    width: 100%;
+                    height: 60px;
+                    margin: 0;
+                    font-size: 100%;
+                }
+            }
+        }
+    }
+
+    .yakor{
+        position: fixed;
+        left: 80%;
+        bottom: 5%;
+        width: 45px;
+        height: 45px;
+        background-color: #1E1E1E;
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        z-index: 9000;
+        & a {
+            width: 60%;
+            height: 60%;
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
     
     
     .header__container-logo{

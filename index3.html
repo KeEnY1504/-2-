@@ -5,30 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="/assets/JS/modal.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header" style="background: none; height: auto;">
+    <header id="header" class="header" style="background: none; height: auto;">
         <div class="header__container" style="background-color: #F8F7F8;">
             <div class="header__container-logo">
                 <img src="./assets/img/maps_2953336.png" alt="" width="65px" height="60px"> 
-                <p style="color: black;">Jokis</p>
+                <a href="./index.html" style="color: black;">Jokis</a>
             </div>
             <div class="header__container-navbar">
                 <div class="hamburger-menu">
-                    <div class="hamburger"><img src="./assets/img/Icon.svg" alt=""></div>
-                    <div class="hamburger__modal">
-                        <div class="hamburger__modal-content">
-                            <span class="close"><img src="./assets/img/close.svg" alt=""></span>
-                            <ul>
+                    <div class="hamburger" id="burgerOpen" ><img src="./assets/img/Icon.svg" alt=""></div>
+                    <div class="hamburger__modal" id="menuItems">
+                            <div class="close" id="burgerClose" style="width: 48px; height: 48px;"><img src="./assets/img/close.svg" alt=""></div>
+                            <ul class="hamburger__nav-links">
                                 <a href="./index.html" class="button">Главная</a>
                                 <a href="./index2.html" class="button">Достопримечательности</a>
                                 <a href="./index3.html" class="button-contact">Контакты</a>
                             </ul>
-                        </div>
                     </div>
                 </div>
                 <ul class="nav-links">
@@ -37,6 +34,7 @@
                     <li><a style="color: black;" href="./index3.html">Контакты</a></li>
                 </ul>
             </div>
+            <script src="./assets/JS/burger.js"></script>
         </div>
     </header>
     <section class="helping">
@@ -104,24 +102,25 @@
             <p style="color: white;">&copy; 2024 Путеводитель по городу. Все права защищены.</p>
         </div>
     </section>
-    <div class="modal" id="my-modal">
-        <div class="modal__box">
-            <button class="modal__close-btn" id="close-my-modal-btn"><img src="./assets/img/free-icon-close-4013407.png" alt="" width="30p" height="30px"></button>
-            <h1>Оставьте заявку, мы с вам с радостью перезвоним и ответим на ваши вопросы</h1>
+        <div class="modal" id="my-modal">
+            <div class="modal__box">
+                <button class="modal__close-btn" id="close-my-modal-btn"><img src="./assets/img/free-icon-close-4013407.png" alt="" width="30p" height="30px"></button>
+                <h1>Оставьте заявку, мы с вам с радостью перезвоним и ответим на ваши вопросы</h1>
 
-            <div class="input-group">
-                <div>
-                    <p>Имя</p>
-                    <input type="text" name="Имя" id="">
-                </div>
-                <div>
-                    <p>Номер телефона</p>
-                    <input type="tel" name="phone" id="">
-                </div>
+                <div class="input-group">
+                    <div>
+                        <p>Имя</p>
+                        <input type="text" name="Имя" id="">
+                    </div>
+                    <div>
+                        <p>Номер телефона</p>
+                        <input type="tel" name="phone" id="">
+                    </div>
 
-                <button>Отправить заявку</button>
+                    <button>Отправить заявку</button>
+                </div>
             </div>
         </div>
-    </div>
+        <script src="/assets/JS/modal.js" defer></script>
 </body>
 </html>
