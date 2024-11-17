@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+<!--    <script src="./assets/JS/script.js" defer></script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        #loader {
+            display: none;
+            font-size: 24px;
+            text-align: center;
+        }
+        .attraction {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="yakor">
+        <a href="#header"><img src="./assets/img/Arrow up.svg" alt="" width="50px" height="50px"></a>
+    </div>
+    <header class="header" id="header">
+        <div class="header__container">
+            <div class="header__container-logo">
+                <img src="./assets/img/maps_2953336.png" alt="" width="65px" height="60px"> 
+                <a href="./index.html">Jokis</p>
+            </div>
+            <div class="header__container-navbar">
+                <div class="hamburger-menu">
+                    <div class="hamburger" id="burgerOpen" ><img src="./assets/img/Icon.svg" alt=""></div>
+                    <div class="hamburger__modal" id="menuItems">
+                            <div class="close" id="burgerClose" style="width: 48px; height: 48px;"><img src="./assets/img/close.svg" alt=""></div>
+                            <ul class="hamburger__nav-links">
+                                <a href="./index.html" class="button">Главная</a>
+                                <a href="./index2.html" class="button">Достопримечательности</a>
+                                <a href="./index3.html" class="button-contact">Контакты</a>
+                            </ul>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./index2.html">Достопримечательности</a></li>
+                    <li><a href="./index3.html">Контакты</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="header__intro">
+            <p class="intro">Дербент</p>
+            <a href="#slid2"><img src="./assets/img/Arrow left.svg" alt=""></a>
+        </div>
+        <script src="./assets/JS/burger.js"></script>
+    </header>
+    <section class="dep">
+    
+        <div class="dep_box">
+            <div class="top">
+                <div class="top-bottoms">
+                    <button class="button_filtr" id='filtr-1'>Архитектурные сооружения</button>
+                    <p>|</p>
+                    <button class="button_filtr" id='filtr-2'>Музеи</button>
+                    <p>|</p>
+                    <button class="button_filtr" id='filtr-3'>Все</button>
+                </div>
+                <input id='search_input' type="search">
+            </div>
+            <div class="dep__cards">
+                <div class="card bam" id="1">
+                    <div class="img" style="background-color: black; width: 200px; height: 150px;"></div>
+                    <h3>Дербентский маяк</h3>
+                </div>
+                <div class="card" id="2">
+                    <div class="img" style="background-color: black; width: 200px; height: 150px;"></div>
+                    <h3>Кырхляр</h3>
+                </div>
+                <div class="card" id="3 bam">
+                    <div class="img" style="background-color: black; width: 200px; height: 150px;"></div>
+                    <h3>Парк имени Низами Гянджеви</h3>
+                </div>
+                <div class="card" id="4">
+                    <div class="img" style="background-color: black; width: 200px; height: 150px;"></div>
+                    <h3>Дербентская стена</h3>
+                </div>
+                <div class="card bum" id="5">
+                    <div class="img" style="background-color: black; width: 200px; height: 150px;"></div>
+                    <h3>Нарын-кала</h3>
+                </div>
+                <div class="card" id="6">
+                    <div class="img" style="background-color: black; width: 200px; height: 150px;"></div>
+                    <h3>Домик Петра I. </h3>
+                </div>
+                <div class="card" id="7">
+                    <div class="img" style="background-color: black; width: 200px; height: 150px;"></div>
+                    <h3>Келе-Нумаз</h3>
+                </div>
+                <div class="card" id="8">
+                    <div class="img" style="background-color: black; width: 200px; height: 150px;"></div>
+                    <h3>Церковь Святого Всеспасителя</h3>
+                </div>
+                <div class="card" id="9">
+                    <div class="img" style="background-color: black; width: 200px; height: 150px;"></div>
+                    <h3>Дербентская Джума-мечеть</h3>
+                </div>
+                <div class="card" id="10">
+                    <div class="img" style="background-color: black; width: 200px; height: 150px;"></div>
+                    <h3>Церковь Покрова</h3>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/JS/index2.js"></script>
+    </section>
+    <section class="footer">
+        <div class="footer__container">
+            <div class="footer__container-logo">
+                <p>Jokis</p>
+            </div>
+            <div class="footer__container-navbar">
+                <ul class="nav-links">
+                    <a href="./index.html">Главная</a>
+                    <a href="./index2.html">Достопримечательности</a>
+                    <a href="./index3.html">Контакты</a>
+                </ul>
+            </div>
+            <div class="footer__container-social">
+                <a href="#" class="social-link"><img src="./assets/img/free-icon-telegram-2111646.png" alt="" width="50px" height="50px"></a>
+                <a href="#" class="social-link"><img src="./assets/img/free-icon-vk-3670055.png" alt="" width="50px" height="50px"></a>
+                <a href="#" class="social-link"><img src="./assets/img/free-icon-instagram-4494488.png" alt="" width="50px" height="50px"></a>
+                <a href="#" class="social-link"><img src="./assets/img/free-icon-youtube-4494485.png" alt="" width="50px" height="50px"></a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p style="color: white;">&copy; 2024 Путеводитель по городу. Все права защищены.</p>
+        </div>
+    </section>
+
+</body>
+</html>
